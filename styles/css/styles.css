@@ -235,7 +235,9 @@
      *
      * ---------------------------------------------------------
      */
-  --text-scale-ratio: 1.2;
+
+  /* --text-sm: 15; */
+  --text-scale-ratio: 1;
   --text-size: var(--base-font-size);
   --text-xs: calc(
     (var(--text-size) / var(--text-scale-ratio)) / var(--text-scale-ratio)
@@ -2760,10 +2762,9 @@ img.u-pull-left {
 }
 
 .text-display-title {
-  --text-display-title-size: 5.6rem;
-  --text-multiplier: 1;
   font-family: var(--font-2);
-  font-size: calc(var(--text-display-title-size) * var(--text-multiplier));
+  font-size: 5.5rem;
+  letter-spacing: 3px;
   font-weight: 600;
   line-height: 1.2857;
   margin-top: 0;
@@ -3165,7 +3166,7 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-intro {
-  --text-huge: 7.6rem;
+  --text-huge: 6rem;
   --text-huge-line-height: 1.158;
   --text-huge-multiplier: 1;
   padding-top: calc(var(--header-height) + var(--vspace-5));
@@ -3214,7 +3215,7 @@ img.u-pull-left {
 .s-intro__text {
   font-family: var(--font-2);
   font-weight: 500;
-  font-size: calc(var(--text-huge) * var(--text-huge-multiplier));
+  font-size: var(--text-huge);
   line-height: var(--text-huge-line-height);
   letter-spacing: normal;
   text-align: center;
@@ -4147,7 +4148,7 @@ img.u-pull-left {
 }
 
 .ss-copyright span {
-  font-size: var(--text-sm);
+  font-size: calc(var(--text-sm) * 0.8);
   display: inline-block;
 }
 
