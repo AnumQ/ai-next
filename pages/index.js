@@ -24,8 +24,13 @@ export default function Home() {
             <header className="s-header">
               <div className="s-header__block">
                 <div className="s-header__logo">
-                  <a className="logo" href="index.html">
-                    <img src="images/logo.svg" alt="Homepage" />
+                  <a className="logo" href="">
+                    <Image
+                      src="/images/logo.svg"
+                      alt="Homeparge"
+                      width="104"
+                      height="78"
+                    />
                   </a>
                 </div>
                 <a className="s-header__menu-toggle" href="#0">
