@@ -6,6 +6,7 @@ import React from "react";
 import { TwitterLink } from "components/Links/TwitterLink";
 import { LinkedInLink } from "components/Links/LinkedInLink";
 import { GithubLink } from "components/Links/GithubLink";
+import { LINKEDLN_URL, TWITTER_URL, GITHUB_URL } from "components/constants";
 
 export default function Home() {
   useEffect(() => {
@@ -181,12 +182,10 @@ export default function Home() {
                           <GithubLink />
                         </div>
                         <li>
-                          <a href="https://www.linkedin.com/in/anum-qudsia-75199262/">
-                            LinkedIn
-                          </a>
+                          <a href={LINKEDLN_URL}>LinkedIn</a>
                         </li>
                         <li>
-                          <a href="https://twitter.com/anumqudsia">Twitter</a>
+                          <a href={TWITTER_URL}>Twitter</a>
                         </li>
                         <li>
                           <a href="https://www.instagram.com/anumtravel/">
@@ -194,7 +193,7 @@ export default function Home() {
                           </a>
                         </li>
                         <li>
-                          <a href="https://github.com/AnumQ/">Github</a>
+                          <a href={GITHUB_URL}>Github</a>
                         </li>
                       </ul>
                     </div>
