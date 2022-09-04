@@ -3,7 +3,12 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Script from "next/script";
 
+import { useEffect } from "react";
+
 export default function Home() {
+  useEffect(() => {
+    console.log("coming here");
+  }, []);
   return (
     <div className={styles.container}>
       <Head>
@@ -33,7 +38,7 @@ export default function Home() {
                     />
                   </a>
                 </div>
-                <a className="s-header__menu-toggle" href="#0">
+                <a className="s-header__menu-toggle">
                   <span>Menu</span>
                 </a>
               </div>{" "}

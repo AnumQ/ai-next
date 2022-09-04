@@ -2853,7 +2853,7 @@ img.u-pull-left {
 
   z-index: 100;
   display: flex;
-  /* height: var(--header-height); */
+  height: var(--header-height);
   height: 7.2rem;
   background-color: var(--color-body);
   border-bottom: 1px solid var(--color-border);
@@ -2973,7 +2973,8 @@ img.u-pull-left {
 .s-header__menu-toggle {
   display: none;
   width: 6.8rem;
-  height: var(--header-height);
+  height: 7.2rem;
+  /* height: var(--header-height); */
   position: absolute;
   top: 0;
   right: 0.8rem;
