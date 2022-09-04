@@ -6,7 +6,12 @@ import React from "react";
 import { TwitterLink } from "components/Links/TwitterLink";
 import { LinkedInLink } from "components/Links/LinkedInLink";
 import { GithubLink } from "components/Links/GithubLink";
-import { LINKEDLN_URL, TWITTER_URL, GITHUB_URL } from "components/constants";
+import {
+  LINKEDLN_URL,
+  TWITTER_URL,
+  GITHUB_URL,
+  EMAIL,
+} from "components/constants";
 
 export default function Home() {
   useEffect(() => {
@@ -146,7 +151,8 @@ export default function Home() {
                     <p className="lead"></p>
                     <div className="btn-wrap">
                       <a
-                        href="mailto:hello@anum.io"
+                        href={`mailto:${EMAIL}`}
+                        // href="mailto:hello@anum.io"
                         className="btn btn--primary"
                       >
                         <svg
@@ -201,7 +207,7 @@ export default function Home() {
                       <h4 className="h6">Contact Me</h4>
                       <ul className="contact-list">
                         <li>
-                          <a href="mailto:hello@anum.io">hello@anum.io</a>
+                          <a href={`mailto:${EMAIL}`}>hello@anum.io</a>
                         </li>
                         <li>
                           <a href="tel:+4793286096">+47 932 86 096</a>
