@@ -2,10 +2,12 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Script from "next/script";
-import { LinkedInLogo } from "../components/SVGs/LinkedInLogo";
-import { TwitterLogo } from "../components/SVGs/TwitterLogo";
-import { GithubLogo } from "../components/SVGs/GithubLogo";
+import { LinkedInLogo } from "components/SVGs/LinkedInLogo";
+import { TwitterLogo } from "components/SVGs/TwitterLogo";
+import { GithubLogo } from "components/SVGs/GithubLogo";
 import { useEffect } from "react";
+import React from "react";
+import { TwitterLink } from "components/Links/TwitterLink";
 
 export default function Home() {
   useEffect(() => {
@@ -63,12 +65,7 @@ export default function Home() {
                   </ul>
                 </nav>
                 <ul className="s-header__social">
-                  <li>
-                    <a href="https://twitter.com/anumqudsia">
-                      <TwitterLogo width="18" height="18" viewBox="0 0 18 18" />
-                      <span className="screen-reader-text">Twitter</span>
-                    </a>
-                  </li>
+                  <TwitterLink />
                   <li>
                     <a href="https://www.linkedin.com/in/anum-qudsia-75199262/">
                       <LinkedInLogo
