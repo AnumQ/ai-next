@@ -8,6 +8,8 @@ import { GithubLogo } from "components/SVGs/GithubLogo";
 import { useEffect } from "react";
 import React from "react";
 import { TwitterLink } from "components/Links/TwitterLink";
+import { LinkedInLink } from "components/Links/LinkedInLink";
+import { GithubLink } from "components/Links/GithubLink";
 
 export default function Home() {
   useEffect(() => {
@@ -66,7 +68,9 @@ export default function Home() {
                 </nav>
                 <ul className="s-header__social">
                   <TwitterLink />
-                  <li>
+                  <LinkedInLink />
+                  <GithubLink />
+                  {/* <li>
                     <a href="https://www.linkedin.com/in/anum-qudsia-75199262/">
                       <LinkedInLogo
                         width="18"
@@ -81,7 +85,7 @@ export default function Home() {
                       <GithubLogo width="18" height="18" viewBox="0 0 18 18" />
                       <span className="screen-reader-text">Github</span>
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>{" "}
               {/* end s-header__nav-wrap */}
@@ -187,32 +191,15 @@ export default function Home() {
                     <div className="column lg-3 md-4 stack-on-700 s-footer__block contact-social">
                       <h4 className="h6">Follow Me</h4>
                       <ul className="contact-list">
-                        <li>
-                          <a href="https://twitter.com/anumqudsia">
-                            <TwitterLogo
-                              width="26"
-                              height="26"
-                              viewBox="0 0 22 22"
-                            />
-                            <span className="screen-reader-text">Twitter</span>
-                          </a>
-                          <a href="https://www.linkedin.com/in/anum-qudsia-75199262/">
-                            <LinkedInLogo
-                              width="24"
-                              height="24"
-                              viewBox="0 0 16 16"
-                            />
-                            <span className="screen-reader-text">LinkedIn</span>
-                          </a>
-                          <a href="https://github.com/AnumQ/">
-                            <GithubLogo
-                              width="24"
-                              height="24"
-                              viewBox="0 0 16 16"
-                            />
-                          </a>
-                          <span className="screen-reader-text">Github</span>
-                        </li>
+                        <div
+                          style={{
+                            display: "flex",
+                          }}
+                        >
+                          <TwitterLink />
+                          <LinkedInLink />
+                          <GithubLink />
+                        </div>
                         <li>
                           <a href="https://www.linkedin.com/in/anum-qudsia-75199262/">
                             LinkedIn
