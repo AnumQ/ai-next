@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Script from "next/script";
-import { LinkedInSVG } from "../components/SVGs/LinkedInSVG";
+import { LinkedInLogo } from "../components/SVGs/LinkedInLogo";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -81,7 +81,11 @@ export default function Home() {
                   </li>
                   <li>
                     <a href="https://www.linkedin.com/in/anum-qudsia-75199262/">
-                      <LinkedInSVG width="18" height="18" viewBox="0 0 18 18" />
+                      <LinkedInLogo
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                      />
                       <span className="screen-reader-text">LinkedIn</span>
                     </a>
                   </li>
@@ -238,7 +242,7 @@ export default function Home() {
                             <span className="screen-reader-text">Twitter</span>
                           </a>
                           <a href="https://www.linkedin.com/in/anum-qudsia-75199262/">
-                            <LinkedInSVG
+                            <LinkedInLogo
                               width="48"
                               height="48"
                               viewBox="0 0 32 32"

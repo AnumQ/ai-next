@@ -1,4 +1,4 @@
-export const LinkedInSVG = ({ width, height, viewBox }) => {
+export const LinkedInLogo = ({ width, height, viewBox }) => {
   return (
     <>
       <svg
