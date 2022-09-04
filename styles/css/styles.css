@@ -4129,6 +4129,9 @@ img.u-pull-left {
 
 .contact-list a {
   color: white;
+  margin-right: 18px;
+
+  /* background: blue; */
 }
 
 .contact-list li {
