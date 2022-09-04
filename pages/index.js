@@ -1,10 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Script from "next/script";
-import { LinkedInLogo } from "components/SVGs/LinkedInLogo";
-import { TwitterLogo } from "components/SVGs/TwitterLogo";
-import { GithubLogo } from "components/SVGs/GithubLogo";
 import { useEffect } from "react";
 import React from "react";
 import { TwitterLink } from "components/Links/TwitterLink";
@@ -70,22 +66,6 @@ export default function Home() {
                   <TwitterLink />
                   <LinkedInLink />
                   <GithubLink />
-                  {/* <li>
-                    <a href="https://www.linkedin.com/in/anum-qudsia-75199262/">
-                      <LinkedInLogo
-                        width="18"
-                        height="18"
-                        viewBox="0 0 18 18"
-                      />
-                      <span className="screen-reader-text">LinkedIn</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/AnumQ/">
-                      <GithubLogo width="18" height="18" viewBox="0 0 18 18" />
-                      <span className="screen-reader-text">Github</span>
-                    </a>
-                  </li> */}
                 </ul>
               </div>{" "}
               {/* end s-header__nav-wrap */}
