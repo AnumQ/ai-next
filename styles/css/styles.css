@@ -3527,6 +3527,11 @@ img.u-pull-left {
   .s-intro__about {
     width: 100%;
   }
+
+  .s-intro__text {
+    margin-top: calc(2 * var(--space));
+    font-size: 36px;
+  }
 }
 
 @media screen and (max-width: 350px) {

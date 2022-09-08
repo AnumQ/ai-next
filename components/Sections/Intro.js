@@ -9,7 +9,7 @@ export const Intro = () => {
           <div className="s-intro__top-block">
             {/* <span className="s-intro__bg" /> */}
             <h1 className="s-intro__text">
-              Mobile- &amp; Frontend <br />
+              Senior Frontend <br />
               <span> Developer.</span>
             </h1>
             <a href="#contact" className="s-intro__scroll-down smoothscroll">
