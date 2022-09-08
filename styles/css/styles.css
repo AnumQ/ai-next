@@ -3182,8 +3182,23 @@ img.u-pull-left {
   position: relative;
 }
 
+.s-intro-background {
+  background-image: url(../images/intro-bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+  top: 7.2rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
 .s-intro__bg {
-  background-image: url(../images/intro-bg.jpg);
+  /* background: red; */
+  /* background-image: url(../images/intro-bg4.jpg); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -3220,7 +3235,7 @@ img.u-pull-left {
   letter-spacing: normal;
   text-align: center;
   margin: 0;
-  margin-top: 100px;
+  margin-top: 300px;
   padding-bottom: calc(10 * var(--space));
   position: relative;
 }
@@ -3248,7 +3263,7 @@ img.u-pull-left {
   position: absolute;
   bottom: 0;
   right: -4rem;
-  z-index: 20;
+  z-index: 2;
 }
 
 .s-intro__scroll-down svg {

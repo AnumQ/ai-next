@@ -136,7 +136,7 @@ export default function Home() {
         >
           Powered by{" "}
           <span className={styles.logo}>
-            <Image src="/anumio.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image src="/anumio.svg" alt="anum Logo" width={72} height={16} />
           </span>
         </a>
       </footer>

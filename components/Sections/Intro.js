@@ -4,9 +4,10 @@ export const Intro = () => {
   return (
     <section id="intro" className="s-intro target-section">
       <div className="row">
+        <span className="s-intro-background"></span>
         <div className="column">
           <div className="s-intro__top-block">
-            <span className="s-intro__bg" />
+            {/* <span className="s-intro__bg" /> */}
             <h1 className="s-intro__text">
               Mobile- &amp; Frontend <br />
               <span> Developer.</span>
