@@ -3422,6 +3422,10 @@ img.u-pull-left {
     display: none;
   }
 
+  .s-intro__top-block {
+    padding: 0 1vw;
+  }
+
   .s-intro__about {
     width: 82%;
   }
@@ -3430,6 +3434,9 @@ img.u-pull-left {
 @media screen and (max-width: 800px) {
   .stats__count {
     font-size: calc(var(--text-size) * 4.4444);
+  }
+  .s-intro-background {
+    top: 0rem;
   }
 }
 
@@ -3456,7 +3463,17 @@ img.u-pull-left {
   }
 
   .s-intro .s-intro__text {
-    padding-bottom: calc(5 * var(--space));
+    padding-bottom: calc(2 * var(--space));
+  }
+
+  .s-intro-background {
+    top: 0rem;
+    height: 300px;
+  }
+
+  .s-intro__text {
+    margin-top: calc(2 * var(--space));
+    font-size: 46px;
   }
 
   .s-intro__about {
