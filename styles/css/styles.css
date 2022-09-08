@@ -140,7 +140,7 @@
   --color-gray-9: #2c2c2d;
   --color-gray-8: #434445;
   --color-gray-7: #5b5b5c;
-  --color-gray-6: #727373;
+  --color-gray-6: #b1b1b1;
   --color-gray-5: #8a8a8b;
   --color-gray-4: #a1a1a2;
   --color-gray-3: #b9b9b9;
@@ -3272,7 +3272,7 @@ img.u-pull-left {
 .s-intro__about {
   z-index: 1;
   flex: none;
-  width: 75%;
+  /* width: 100%; */
   max-width: 880px;
   background-color: rgba(10, 11, 11, 0.75);
   font-weight: 300;

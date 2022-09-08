@@ -28,17 +28,12 @@ export default function Home() {
           <div id="loader"></div>
         </div>
         <div id="s-pagewrap">
-          <>
-            <Header />
-            {/* end s-header */}
-          </>
-
-          <>
-            <Intro />
-            {/* end s-intro */}
-            <Contact />
-            {/* end s-contact */}
-          </>
+          <Header />
+          {/* end s-header */}
+          <Intro />
+          {/* end s-intro */}
+          <Contact />
+          {/* end s-contact */}
         </div>
         {/* end -s-pagewrap */}
 
