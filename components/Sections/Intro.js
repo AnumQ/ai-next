@@ -4,7 +4,7 @@ export const Intro = () => {
   return (
     <section id="intro" className="s-intro target-section">
       <div className="row">
-        <span className="s-intro-background"></span>
+        <div className="s-intro-background"></div>
         <div className="column">
           <div className="s-intro__top-block">
             {/* <span className="s-intro__bg" /> */}
