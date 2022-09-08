@@ -3183,13 +3183,13 @@ img.u-pull-left {
 }
 
 .s-intro-background {
-  background-image: url(../images/intro-bg2.jpg);
+  background-image: url(../images/intro-bg6.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   width: 100%;
   position: absolute;
-  top: 7.2rem;
+  top: 2rem;
   right: 0;
   bottom: 0;
   left: 0;
