@@ -2832,7 +2832,7 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-pagewrap {
-  --header-height: 7.2rem;
+  --header-height: 7.3rem;
 
   display: flex;
   flex-direction: column;
@@ -2854,7 +2854,6 @@ img.u-pull-left {
   z-index: 100;
   display: flex;
   height: var(--header-height);
-  height: 7.2rem;
   background-color: var(--color-body);
   border-bottom: 1px solid var(--color-border);
   width: 100%;
@@ -3167,7 +3166,7 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-intro {
-  --text-huge: 6rem;
+  --text-huge: 6.6rem;
   --text-huge-line-height: 1.158;
   --text-huge-multiplier: 1;
   padding-top: calc(var(--header-height) + var(--vspace-5));
@@ -3249,6 +3248,7 @@ img.u-pull-left {
   position: absolute;
   bottom: 0;
   right: -4rem;
+  z-index: 20;
 }
 
 .s-intro__scroll-down svg {
