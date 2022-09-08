@@ -18,9 +18,9 @@ export const Header = () => {
             />
           </a>
         </div>
-        <a className="s-header__menu-toggle">
+        {/* <a className="s-header__menu-toggle">
           <span>Menu</span>
-        </a>
+        </a> */}
       </div>
       {/* end s-header__block */}
       <div className="row s-header__nav-wrap">
