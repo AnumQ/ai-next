@@ -3185,15 +3185,17 @@ img.u-pull-left {
 .s-intro-background {
   background-image: url(../images/intro-bg6.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  /* background-position: center; */
+  background-size: 100%;
   width: 100%;
+  /* background: red; */
+  height: 1468px;
   position: absolute;
-  top: 2rem;
+  top: 1rem;
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: 0.25;
+  opacity: 0.3;
 }
 
 .s-intro__bg {
