@@ -24,9 +24,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div id="preloader">
+        {/* <div id="preloader">
           <div id="loader"></div>
-        </div>
+        </div> */}
         <div id="s-pagewrap">
           <Header />
           {/* end s-header */}
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
         {/* end -s-pagewrap */}
 
-        <div aria-hidden="true" className="pswp" role="dialog" tabIndex={-1}>
+        {/* <div aria-hidden="true" className="pswp" role="dialog" tabIndex={-1}>
           <div className="pswp__bg" />
           <div className="pswp__scroll-wrap">
             <div className="pswp__container">
@@ -88,7 +88,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
