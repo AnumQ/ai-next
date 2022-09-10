@@ -2763,7 +2763,8 @@ img.u-pull-left {
 
 .text-display-title {
   font-family: var(--font-2);
-  font-size: 5.5rem;
+  font-size: calc(var(--base-font-size) * var(--text-multiplier) * 2);
+  /* font-size: calc(var(--text-xxl * --text-multiplier)) px; */
   letter-spacing: 3px;
   font-weight: 600;
   line-height: 1.2857;
@@ -3189,7 +3190,7 @@ img.u-pull-left {
   background-size: 100%;
   width: 100%;
   /* background: red; */
-  /* height: 1468px; */
+  height: 1468px;
   position: absolute;
   top: 1rem;
   right: 0;
