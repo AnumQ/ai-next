@@ -3162,6 +3162,19 @@ img.u-pull-left {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .s-header__logo {
+    left: 1.5rem;
+    width: calc(var(--logo-width) * 0.8);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .s-header__logo {
+    left: 1rem;
+    width: calc(var(--logo-width) * 0.65);
+  }
+}
 /* ===================================================================
  * # INTRO
  *
