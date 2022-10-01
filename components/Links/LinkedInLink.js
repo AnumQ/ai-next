@@ -2,7 +2,7 @@ import { LINKEDLN_URL } from "components/constants";
 import { LinkedInLogo } from "components/SVGs/LinkedInLogo";
 import React from "react";
 
-export const LinkedInLink = () => {
+export default function LinkedInLink() {
   return (
     <>
       <li>
@@ -13,4 +13,4 @@ export const LinkedInLink = () => {
       </li>
     </>
   );
-};
+}

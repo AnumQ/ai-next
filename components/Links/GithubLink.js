@@ -2,7 +2,7 @@ import { GITHUB_URL } from "components/constants";
 import GithubLogo from "components/SVGs/GithubLogo";
 import React from "react";
 
-export const GithubLink = () => {
+export default function GithubLink() {
   return (
     <>
       <li>
@@ -13,4 +13,4 @@ export const GithubLink = () => {
       </li>
     </>
   );
-};
+}

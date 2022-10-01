@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import { TwitterLink } from "components/Links/TwitterLink";
-import { LinkedInLink } from "components/Links/LinkedInLink";
 import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
-import { GithubLink } from "components/Links/GithubLink";
+import GithubLink from "components/Links/GithubLink";
+import LinkedInLink from "components/Links/LinkedInLink";
+import TwitterLink from "components/Links/TwitterLink";
 
 export default function Header() {
   return (
