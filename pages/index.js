@@ -5,7 +5,10 @@ import Header from "components/Header/Header";
 import Intro from "components/Sections/Intro";
 import Contact from "components/Sections/Contact";
 import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
-import { META_DESCRIPTION as META_CONTENT } from "components/constants";
+import {
+  SITE_META_DESCRIPTION as META_CONTENT,
+  SITE_TITLE,
+} from "components/constants";
 import Footer from "components/Footer/Footer";
 
 export default function Home() {
@@ -14,7 +17,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Anum Codes | Software Engineer</title>
+        <title>{SITE_TITLE}</title>
         <meta name="description" content={META_CONTENT} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
