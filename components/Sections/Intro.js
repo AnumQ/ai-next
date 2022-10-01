@@ -2,7 +2,7 @@ import useData from "components/hooks/useData";
 import ArrowSVG from "components/SVGs/ArrowSVG";
 import React from "react";
 
-export const Intro = () => {
+export default function Intro() {
   const { introData: data, constants } = useData();
 
   return (
@@ -35,4 +35,4 @@ export const Intro = () => {
       </div>
     </section>
   );
-};
+}

@@ -5,7 +5,7 @@ import { LinkedInLink } from "components/Links/LinkedInLink";
 import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
 import { GithubLink } from "components/Links/GithubLink";
 
-export const Header = () => {
+export default function Header() {
   return (
     <>
       <AnimatePresence>
@@ -58,4 +58,4 @@ export const Header = () => {
       </AnimatePresence>
     </>
   );
-};
+}

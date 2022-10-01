@@ -3,9 +3,9 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { useEffect } from "react";
 import React from "react";
-import { Header } from "components/Header/Header";
-import { Intro } from "components/Sections/Intro";
-import { Contact } from "components/Sections/Contact";
+import Header from "components/Header/Header";
+import Intro from "components/Sections/Intro";
+import Contact from "components/Sections/Contact";
 import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
 import { META_DESCRIPTION as META_CONTENT } from "components/constants";
 

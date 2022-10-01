@@ -9,7 +9,7 @@ import {
   EMAIL,
 } from "components/constants";
 
-export const Contact = () => {
+export default function Contact() {
   return (
     <section id="contact" className="s-contact target-section">
       <div className="row section-header section-header--dark">
@@ -128,4 +128,4 @@ export const Contact = () => {
       </footer>
     </section>
   );
-};
+}
