@@ -1,6 +1,6 @@
 import React from "react";
 
-export const TwitterLogo = ({ width, height, viewBox }) => {
+export default function TwitterLogo({ width, height, viewBox }) {
   return (
     <>
       <svg
@@ -19,4 +19,4 @@ export const TwitterLogo = ({ width, height, viewBox }) => {
       </svg>
     </>
   );
-};
+}

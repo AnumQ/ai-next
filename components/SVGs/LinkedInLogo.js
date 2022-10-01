@@ -1,6 +1,6 @@
 import React from "react";
 
-export const LinkedInLogo = ({ width, height, viewBox }) => {
+export default function LinkedInLogo({ width, height, viewBox }) {
   return (
     <>
       <svg
@@ -19,4 +19,4 @@ export const LinkedInLogo = ({ width, height, viewBox }) => {
       </svg>
     </>
   );
-};
+}
