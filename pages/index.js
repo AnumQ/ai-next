@@ -7,6 +7,7 @@ import { Header } from "components/Header/Header";
 import { Intro } from "components/Sections/Intro";
 import { Contact } from "components/Sections/Contact";
 import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
+import { META_DESCRIPTION as META_CONTENT } from "components/constants";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -15,10 +16,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Anum Codes | Software Engineer</title>
-        <meta
-          name="description"
-          content="frontend developer react developer swift developer mobile developer senior frontend utvikler mobil utvikler developer utvikler react nextjs typescript javascript utvikler"
-        />
+        <meta name="description" content={META_CONTENT} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

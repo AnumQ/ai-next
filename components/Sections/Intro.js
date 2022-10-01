@@ -29,7 +29,7 @@ export const Intro = () => {
           <p>
             {data.titleDescription1}
             <b>{data.titleDescription2}</b>
-          </p>{" "}
+          </p>
           <p>{data.titleDescription3}</p>
         </div>
       </div>
