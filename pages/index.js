@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { useEffect } from "react";
 import React from "react";
 import Header from "components/Header/Header";
 import Intro from "components/Sections/Intro";
