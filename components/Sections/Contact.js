@@ -4,6 +4,7 @@ import {
   TWITTER_URL,
   GITHUB_URL,
   EMAIL,
+  MOBILE,
 } from "components/constants";
 import GithubLink from "components/Links/GithubLink";
 import LinkedInLink from "components/Links/LinkedInLink";
@@ -82,7 +83,7 @@ export default function Contact() {
                 <a href={`mailto:${EMAIL}`}>hello@anum.io</a>
               </li>
               <li>
-                <a href="tel:+4793286096">+47 932 86 096</a>
+                <a href={`tel:${MOBILE}`}>+47 932 86 096</a>
               </li>
             </ul>
           </div>
