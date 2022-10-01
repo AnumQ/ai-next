@@ -3,7 +3,11 @@ const useData = () => {
     titlePart1: "Senior Frontend",
     titlePart2: " Developer.",
   };
-  return { introData };
+
+  const constants = {
+    scrollDown: "Scroll Down",
+  };
+  return { introData, constants };
 };
 
 export default useData;
