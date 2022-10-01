@@ -8,6 +8,7 @@ import Intro from "components/Sections/Intro";
 import Contact from "components/Sections/Contact";
 import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
 import { META_DESCRIPTION as META_CONTENT } from "components/constants";
+import Footer from "components/Footer/Footer";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -152,18 +153,7 @@ export default function Home() {
         </div> */}
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/anumio.svg" alt="anum Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <Footer />
     </div>
   );
 }

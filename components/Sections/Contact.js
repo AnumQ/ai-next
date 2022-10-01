@@ -99,7 +99,7 @@ export default function Contact() {
           <div className="column ss-copyright">
             <span>© Copyright Anum Codes 2022</span>
             <span>
-              Design by <a href="https://www.styleshout.com/">StyleShout</a>
+              {/* Design by <a href="https://www.styleshout.com/">StyleShout</a> */}
             </span>
           </div>
           <div className="ss-go-top">
