@@ -1,6 +1,9 @@
+import useData from "components/hooks/useData";
 import React from "react";
 
 export const Intro = () => {
+  const { introData: data } = useData();
+
   return (
     <section id="intro" className="s-intro target-section">
       <div className="row">
@@ -9,8 +12,8 @@ export const Intro = () => {
           <div className="s-intro__top-block">
             {/* <span className="s-intro__bg" /> */}
             <h1 className="s-intro__text">
-              Senior Frontend <br />
-              <span> Developer.</span>
+              {data.titlePart1} <br />
+              <span>{data.titlePart2}</span>
             </h1>
             <a href="#contact" className="s-intro__scroll-down smoothscroll">
               <span>Scroll Down</span>
