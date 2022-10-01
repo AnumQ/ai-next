@@ -1,13 +1,13 @@
 import React from "react";
-import { TwitterLink } from "components/Links/TwitterLink";
-import { LinkedInLink } from "components/Links/LinkedInLink";
-import { GithubLink } from "components/Links/GithubLink";
 import {
   LINKEDLN_URL,
   TWITTER_URL,
   GITHUB_URL,
   EMAIL,
 } from "components/constants";
+import GithubLink from "components/Links/GithubLink";
+import LinkedInLink from "components/Links/LinkedInLink";
+import TwitterLink from "components/Links/TwitterLink";
 
 export default function Contact() {
   return (
