@@ -6,11 +6,10 @@ import React from "react";
 import { Header } from "components/Header/Header";
 import { Intro } from "components/Sections/Intro";
 import { Contact } from "components/Sections/Contact";
+import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
 
 export default function Home() {
-  useEffect(() => {
-    // console.log("coming here");
-  }, []);
+  const { scrollYProgress } = useScroll();
 
   return (
     <div className={styles.container}>
@@ -18,12 +17,38 @@ export default function Home() {
         <title>Anum Codes | Software Engineer</title>
         <meta
           name="description"
-          content="frontend utvikler mobil utvikler developer utvikler react nextjs typescript javascript utvikler"
+          content="frontend developer react developer swift developer mobile developer senior frontend utvikler mobil utvikler developer utvikler react nextjs typescript javascript utvikler"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
+        <div className={styles.upper} style={{ display: "none" }}>
+          <AnimatePresence>
+            {true && (
+              <motion.div
+                // initial={{ opacity: 0 }}
+                // animate={{ opacity: 1 }}
+                key="modal"
+                initial={{ x: 400, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: -400, opacity: 0 }}
+              >
+                <p>test</p>
+                <p> hallo there</p>
+              </motion.div>
+            )}
+          </AnimatePresence>
+          <motion.button
+            whileHover={{
+              scale: 1.2,
+              transition: { duration: 0.05 },
+            }}
+            whileTap={{ scale: 0.9 }}
+          >
+            Click me{" "}
+          </motion.button>
+        </div>
         {/* <div id="preloader">
           <div id="loader"></div>
         </div> */}
@@ -128,6 +153,7 @@ export default function Home() {
           </a>
         </div> */}
       </main>
+
       <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
