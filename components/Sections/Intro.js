@@ -30,8 +30,8 @@ export const Intro = () => {
           <div className="s-intro__top-block">
             {/* <span className="s-intro__bg" /> */}
             <h1 className="s-intro__text">
-              {data.titlePart1} <br />
-              <span>{data.titlePart2}</span>
+              {data.titleIntro1} <br />
+              <span>{data.titleIntro2}</span>
             </h1>
             <a href="#contact" className="s-intro__scroll-down smoothscroll">
               <span>{constants.scrollDown}</span>
@@ -42,21 +42,12 @@ export const Intro = () => {
       </div>
       <div className="row row-x-center s-intro__about-wrap">
         <div className="column s-intro__about">
-          <h2 className="s-intro__about-title">Hello, I am Anum Qudsia</h2>
+          <h2 className="s-intro__about-title">{data.titleAbout}</h2>
           <p>
-            I am an independent mobile, frontend/fullstack developer with 8
-            years of experience in iOS, Android and Web development. Skills:{" "}
-            <b>
-              Swift, ReactJS, NextJS, Firebase, Kotlin, Android, Java,
-              Javascript/Typescript, Node, Azure, HTML, CSS{" "}
-            </b>
+            {data.titleDescription1}
+            <b>{data.titleDescription2}</b>
           </p>{" "}
-          <p>
-            I have also integrated several third-party libraries i.e. payment
-            providers such as Stripe and written native modules in React Native
-            to create bridge between Android SDK (written in Java) and
-            Javascript.
-          </p>
+          <p>{data.titleDescription3}</p>
         </div>
       </div>
     </section>
