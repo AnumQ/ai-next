@@ -259,6 +259,14 @@
   --vspace-btn: var(--vspace-2);
 }
 
+/* ------------------------------------------------------------------- 
+ * ## Height
+ * ------------------------------------------------------------------- */
+
+:root {
+  --header-height: 7.3rem;
+}
+
 /* on mobile devices below 600px, change the value of '--multiplier' 
  * to adjust the values of base font size and vertical space unit.
  */
@@ -2834,7 +2842,8 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-pagewrap {
-  --header-height: 6rem;
+  /* --header-height: 6rem; */
+  height: var(--header-height);
 
   display: flex;
   flex-direction: column;
@@ -2981,10 +2990,9 @@ img.u-pull-left {
  * ## mobile menu toggle
  * -------------------------------------------------------------------- */
 .s_header__menu-toggle {
-  display: none;
+  display: block;
   width: 6.8rem;
-  height: 7.2rem;
-  /* height: var(--header-height); */
+  height: var(--header-height);
   position: absolute;
   top: 0;
   right: 0.8rem;
@@ -3064,14 +3072,16 @@ img.u-pull-left {
 
 @media screen and (max-width: 900px) {
   .s_header {
-    display: block;
-    border: none;
-    background-color: transparent;
+    /* display: block; */
+    /* border: none; */
+    /* background-color: transparent; */
+    height: var(--header-height);
+    /* height: 6rem; */
   }
 
   .s_header__block {
     width: 100%;
-    height: var(--header-height);
+    /* height: var(--header-height); */
     background-color: var(--color-body);
     border-bottom: 1px solid var(--color-border);
     box-shadow: var(--box-shadow);
