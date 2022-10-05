@@ -7,7 +7,7 @@ import TwitterLink from "components/Links/TwitterLink";
 import s from "./Header.module.css";
 
 export default function Header() {
-  const [navItem, setNavItem] = React.useState(1);
+  const [navItem, setNavItem] = React.useState(0);
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const toggleMenu = () => {

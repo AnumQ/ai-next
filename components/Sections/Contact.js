@@ -27,7 +27,7 @@ export default function Contact() {
           <h1 className="text-display-title">{CONTACT_TITLE}</h1>
         </div>
       </div>
-      <div className="row row-x-center text-center s-contact__content">
+      <div className="row row_x_center text-center s-contact__content">
         <div className="column lg-12">
           <p className="lead"></p>
           <div className="btn-wrap">
