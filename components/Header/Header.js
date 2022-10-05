@@ -8,6 +8,11 @@ import s from "./Header.module.css";
 
 export default function Header() {
   const [navItem, setNavItem] = React.useState(1);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <>
       {/* <AnimatePresence>
@@ -29,9 +34,17 @@ export default function Header() {
               />
             </a>
           </div>
-          {/* <a className="s_header__menu_toggle">
-          <span>Menu</span>
-        </a> */}
+          {/* <a className="s_header__menu_toggle"> */}
+          <a
+            className={
+              !isMenuOpen
+                ? s.s_header__menu_toggle
+                : `${s.s_header__menu_toggle} ${s.is_clicked}`
+            }
+            onClick={() => toggleMenu()}
+          >
+            <span>Menu</span>
+          </a>
         </div>
         {/* end s_header__block */}
         {/* <div className="row s_header__nav_wrap"> */}

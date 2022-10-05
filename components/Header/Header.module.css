@@ -149,6 +149,7 @@
   position: absolute;
   top: 0;
   right: 0.8rem;
+  cursor: pointer;
 }
 
 .s_header__menu_toggle span {
@@ -192,22 +193,22 @@
 
 /* is clicked 
  */
-.s_header__menu_toggle.is-clicked span {
+.s_header__menu_toggle.is_clicked span {
   background-color: rgba(255, 255, 255, 0);
 }
 
-.s_header__menu_toggle.is-clicked span::before,
-.s_header__menu_toggle.is-clicked span::after {
+.s_header__menu_toggle.is_clicked span::before,
+.s_header__menu_toggle.is_clicked span::after {
   background-color: white;
   transition-delay: 0s, 0.2s;
 }
 
-.s_header__menu_toggle.is-clicked span::before {
+.s_header__menu_toggle.is_clicked span::before {
   top: 0;
   transform: rotate(45deg);
 }
 
-.s_header__menu_toggle.is-clicked span::after {
+.s_header__menu_toggle.is_clicked span::after {
   bottom: 0;
   transform: rotate(-45deg);
 }
@@ -220,6 +221,9 @@
   .s_header__nav a {
     font-size: 9px;
     padding: 0 2rem;
+  }
+  .s_header__menu_toggle {
+    display: none;
   }
 }
 
