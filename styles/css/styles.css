@@ -2834,7 +2834,7 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-pagewrap {
-  --header-height: 7.3rem;
+  --header-height: 6rem;
 
   display: flex;
   flex-direction: column;
@@ -2852,7 +2852,6 @@ img.u-pull-left {
   --logo-width: 104px;
   --box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06), 0 2px 2px rgba(0, 0, 0, 0.06),
     0 4px 4px rgba(0, 0, 0, 0.06), 0 8px 8px rgba(0, 0, 0, 0.06);
-
   z-index: 100;
   display: flex;
   height: var(--header-height);
@@ -2862,6 +2861,16 @@ img.u-pull-left {
   position: fixed;
   top: 0;
   left: 0;
+  animation: animateHeader 0.4s;
+}
+
+@keyframes animateHeader {
+  from {
+    top: -7.3rem;
+  }
+  to {
+    top: 0;
+  }
 }
 
 .s-header__block {
