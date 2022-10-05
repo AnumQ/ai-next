@@ -4,8 +4,10 @@ import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
 import GithubLink from "components/Links/GithubLink";
 import LinkedInLink from "components/Links/LinkedInLink";
 import TwitterLink from "components/Links/TwitterLink";
+import s from "./Header.module.css";
 
 export default function Header() {
+  const [navItem, setNavItem] = React.useState(1);
   return (
     <>
       {/* <AnimatePresence>
@@ -15,9 +17,9 @@ export default function Header() {
           animate={{ top: 0 }}
           transition={{ ease: "easeOut", duration: 0.5 }}
         > */}
-      <header className="s_header">
-        <div className="s_header__block">
-          <div className="s_header__logo">
+      <header className={s.s_header}>
+        <div className={s.s_header__block}>
+          <div className={s.s_header__logo}>
             <a className="logo" href="">
               <Image
                 src="/images/logo.svg"
@@ -32,30 +34,38 @@ export default function Header() {
         </a> */}
         </div>
         {/* end s_header__block */}
-        <div className="row s_header__nav-wrap">
-          <nav className="s_header__nav">
+        {/* <div className="row s_header__nav_wrap"> */}
+        <div className={`${s.row} ${s.s_header__nav_wrap}`}>
+          {/* <nav className="s_header__nav"> */}
+          <nav className={s.s_header__nav}>
             <ul>
-              <li className="current">
+              <li
+                className={navItem === 0 ? s.current : ""}
+                onClick={() => setNavItem(0)}
+              >
                 <a href="#intro" className="smoothscroll">
                   Intro
                 </a>
               </li>
               {/* <li><a href="#services" class="smoothscroll">What We Do</a></li> */}
               {/* <li><a href="#works" class="smoothscroll">My projects</a></li> */}
-              <li>
+              <li
+                className={navItem === 1 ? s.current : ""}
+                onClick={() => setNavItem(1)}
+              >
                 <a href="#contact" className="smoothscroll">
                   Get In Touch
                 </a>
               </li>
             </ul>
           </nav>
-          <ul className="s_header__social">
+          <ul className={s.s_header__social}>
             <TwitterLink />
             <LinkedInLink />
             <GithubLink />
           </ul>
         </div>
-        {/* end s_header__nav-wrap */}
+        {/* end s_header__nav_wrap */}
         {/* </motion.header> */}
         {/* </AnimatePresence> */}
       </header>

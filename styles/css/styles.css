@@ -2913,7 +2913,7 @@ img.u-pull-left {
 /* --------------------------------------------------------------------
  * ## main navigation
  * -------------------------------------------------------------------- */
-.s_header__nav-wrap {
+.s_header__nav_wrap {
   justify-content: center;
   align-items: flex-start;
 }
@@ -3091,7 +3091,7 @@ img.u-pull-left {
     left: 2.8rem;
   }
 
-  .s_header__nav-wrap {
+  .s_header__nav_wrap {
     display: block;
     width: 100%;
     max-width: none;
@@ -3165,7 +3165,7 @@ img.u-pull-left {
     box-shadow: none;
   }
 
-  .menu-is-open .s_header__nav-wrap {
+  .menu-is-open .s_header__nav_wrap {
     transform: scaleY(1);
     transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
     transition-delay: 0s;
