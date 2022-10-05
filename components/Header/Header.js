@@ -10,14 +10,14 @@ export default function Header() {
     <>
       {/* <AnimatePresence>
         <motion.header
-          className="s-header"
+          className="s_header"
           initial={{ top: "-6rem" }}
           animate={{ top: 0 }}
           transition={{ ease: "easeOut", duration: 0.5 }}
         > */}
-      <header className="s-header">
-        <div className="s-header__block">
-          <div className="s-header__logo">
+      <header className="s_header">
+        <div className="s_header__block">
+          <div className="s_header__logo">
             <a className="logo" href="">
               <Image
                 src="/images/logo.svg"
@@ -27,13 +27,13 @@ export default function Header() {
               />
             </a>
           </div>
-          {/* <a className="s-header__menu-toggle">
+          {/* <a className="s_header__menu-toggle">
           <span>Menu</span>
         </a> */}
         </div>
-        {/* end s-header__block */}
-        <div className="row s-header__nav-wrap">
-          <nav className="s-header__nav">
+        {/* end s_header__block */}
+        <div className="row s_header__nav-wrap">
+          <nav className="s_header__nav">
             <ul>
               <li className="current">
                 <a href="#intro" className="smoothscroll">
@@ -49,13 +49,13 @@ export default function Header() {
               </li>
             </ul>
           </nav>
-          <ul className="s-header__social">
+          <ul className="s_header__social">
             <TwitterLink />
             <LinkedInLink />
             <GithubLink />
           </ul>
         </div>
-        {/* end s-header__nav-wrap */}
+        {/* end s_header__nav-wrap */}
         {/* </motion.header> */}
         {/* </AnimatePresence> */}
       </header>

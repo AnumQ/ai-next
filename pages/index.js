@@ -54,7 +54,7 @@ export default function Home() {
         </div> */}
         <div id="s-pagewrap">
           <Header />
-          {/* end s-header */}
+          {/* end s_header */}
           <Intro />
           {/* end s-intro */}
           <Contact />
