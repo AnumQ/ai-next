@@ -8,7 +8,7 @@ export default function Intro() {
   return (
     <section id="intro" className="s_intro target-section">
       <div className="row">
-        <div className="s_intro-background"></div>
+        <div className="s_intro_background"></div>
         <div className="column">
           <div className="s_intro__top-block">
             {/* <span className="s_intro__bg" /> */}
