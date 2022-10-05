@@ -264,7 +264,7 @@
  * ------------------------------------------------------------------- */
 
 :root {
-  --header-height: 7.3rem;
+  --header-height: 7.1rem;
 }
 
 /* on mobile devices below 600px, change the value of '--multiplier' 
