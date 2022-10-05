@@ -143,7 +143,7 @@
  * ## mobile menu toggle
  * -------------------------------------------------------------------- */
 .s_header__menu_toggle {
-  display: block;
+  display: none;
   width: 6.8rem;
   height: var(--header-height);
   position: absolute;
@@ -221,9 +221,6 @@
   .s_header__nav a {
     font-size: 9px;
     padding: 0 2rem;
-  }
-  .s_header__menu_toggle {
-    display: none;
   }
 }
 
