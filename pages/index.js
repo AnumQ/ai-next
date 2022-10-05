@@ -56,7 +56,7 @@ export default function Home() {
           <Header />
           {/* end s-header */}
           <Intro />
-          {/* end s-intro */}
+          {/* end s_intro */}
           <Contact />
           {/* end s-contact */}
         </div>
