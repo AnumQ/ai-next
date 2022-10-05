@@ -29,7 +29,7 @@ export default function Header() {
               />
             </a>
           </div>
-          {/* <a className="s_header__menu-toggle">
+          {/* <a className="s_header__menu_toggle">
           <span>Menu</span>
         </a> */}
         </div>
