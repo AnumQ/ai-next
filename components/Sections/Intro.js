@@ -8,7 +8,7 @@ export default function Intro() {
 
   return (
     // <section id="intro" className="s_intro target-section">
-    <section id="intro" className={`${s.s_intro} target-section`}>
+    <section id="intro" className={`${s.s_intro}`}>
       <div className={s.row}>
         <div className={s.s_intro_background}></div>
         <div className={s.column}>
@@ -30,7 +30,7 @@ export default function Intro() {
       <div className={`${s.row} ${s.row_x_center}`}>
         {/* <div className="column s_intro__about"> */}
         <div className={`${s.column} ${s.s_intro__about}`}>
-          <h2 className="s_intro__about_title">{data.titleAbout}</h2>
+          <h2 className={s.s_intro__about_title}>{data.titleAbout}</h2>
           <p>
             {data.titleDescription1}
             <b>{data.titleDescription2}</b>
