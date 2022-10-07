@@ -2641,7 +2641,7 @@ td:last-child {
   line-height: calc(0.9375 * var(--space));
 }
 
-.screen-reader-text {
+.screen_reader_text {
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
   height: 1px;

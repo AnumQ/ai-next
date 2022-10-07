@@ -8,7 +8,7 @@ export default function TwitterLink() {
       <li>
         <a href={TWITTER_URL}>
           <TwitterLogo width="32" height="32" viewBox="0 0 18 18" />
-          <span className="screen-reader-text">Twitter</span>
+          <span className="screen_reader_text">Twitter</span>
         </a>
       </li>
     </>
