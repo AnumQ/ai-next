@@ -23,7 +23,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  animation: animateHeader 0.4s;
+  animation: animateHeader 0.5s;
 }
 
 @keyframes animateHeader {
