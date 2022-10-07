@@ -8,12 +8,12 @@ export default function Intro() {
   const { introData: data, constants } = useData();
 
   const animations = {
-    hidden: { opacity: 0, top: 40, scale: 1 },
+    hidden: { opacity: 0, top: 40 },
     showTopBlock: {
       opacity: 1,
       top: 0,
       transition: {
-        ease: (progress) => progress * progress,
+        ease: "easeOut",
         duration: 0.4,
         delay: 0.25,
       },
@@ -23,10 +23,10 @@ export default function Intro() {
       top: 0,
       transition: { ease: "backIn", duration: 0.6, delay: 0.4 },
     },
-
+    hiddenBackgroundImage: { opacity: 0, scale: 0.96 },
     showBackgroundImage: {
       opacity: 0.25,
-      scale: 1.05,
+      scale: 1,
       transition: { ease: "easeOut", duration: 2.6, delay: 0.5 },
     },
   };
@@ -36,10 +36,10 @@ export default function Intro() {
       <div className={s.row}>
         <motion.div
           variants={animations}
-          initial="hidden"
+          initial="hiddenBackgroundImage"
           animate="showBackgroundImage"
           className={s.s_intro_background}
-        ></motion.div>
+        />
         <div className={s.column}>
           <motion.div
             className={s.s_intro__top_block}
