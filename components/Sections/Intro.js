@@ -2,7 +2,7 @@ import useData from "components/hooks/useData";
 import ArrowSVG from "components/SVGs/ArrowSVG";
 import React from "react";
 import s from "./Intro.module.css";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Intro() {
   const { introData: data, constants } = useData();
@@ -12,7 +12,6 @@ export default function Intro() {
     showTopBlock: {
       opacity: 1,
       top: 0,
-      // transition: { ease: "easeIn", duration: 0.4, delay: 0.25 },
       transition: {
         ease: (progress) => progress * progress,
         duration: 0.4,
@@ -31,6 +30,7 @@ export default function Intro() {
       transition: { ease: "easeOut", duration: 2.6, delay: 0.5 },
     },
   };
+
   return (
     <section id="intro" className={`${s.s_intro}`}>
       <div className={s.row}>
