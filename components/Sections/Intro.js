@@ -23,7 +23,7 @@ export default function Intro() {
       top: 0,
       transition: { ease: "backIn", duration: 0.6, delay: 0.4 },
     },
-    hiddenBackgroundImage: { opacity: 0, scale: 0.96 },
+    hideBackgroundImage: { opacity: 0, scale: 0.96 },
     showBackgroundImage: {
       opacity: 0.25,
       scale: 1,
@@ -36,16 +36,16 @@ export default function Intro() {
       <div className={s.row}>
         <motion.div
           variants={animations}
-          initial="hiddenBackgroundImage"
-          animate="showBackgroundImage"
+          initial={animations.hideBackgroundImage}
+          animate={animations.showBackgroundImage}
           className={s.s_intro_background}
         />
         <div className={s.column}>
           <motion.div
             className={s.s_intro__top_block}
             variants={animations}
-            initial="hidden"
-            animate="showTopBlock"
+            initial={animations.hidden}
+            animate={animations.showTopBlock}
           >
             <h1 className={s.s_intro__text}>
               {data.titleIntro1} <br />
@@ -61,8 +61,8 @@ export default function Intro() {
       <div className={`${s.row} ${s.row_x_center}`}>
         <motion.div
           variants={animations}
-          initial="hidden"
-          animate="showIntroAbout"
+          initial={animations.hidden}
+          animate={animations.showIntroAbout}
           className={`${s.column} ${s.s_intro__about}`}
         >
           <h2 className={s.s_intro__about_title}>{data.titleAbout}</h2>
