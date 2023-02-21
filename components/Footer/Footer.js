@@ -10,7 +10,7 @@ export default function Footer() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Powered by{" "}
+        Powered by
         <span className={styles.logo}>
           <Image src="/anumio.svg" alt="anum Logo" width={72} height={16} />
         </span>
