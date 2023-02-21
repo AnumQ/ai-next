@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
-import GithubLink from "components/Links/GithubLink";
-import LinkedInLink from "components/Links/LinkedInLink";
-import TwitterLink from "components/Links/TwitterLink";
+import GithubLink from "../Links/GithubLink";
+import LinkedInLink from "../Links/LinkedInLink";
+import TwitterLink from "../Links/TwitterLink";
 import s from "./Header.module.css";
 
 export default function Header() {

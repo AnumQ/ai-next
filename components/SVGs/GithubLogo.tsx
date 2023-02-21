@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function GithubLogo({ width, height, viewBox }) {
+interface Props {
+  width: string;
+  height: string;
+  viewBox: string;
+}
+
+export default function GithubLogo({ width, height, viewBox }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

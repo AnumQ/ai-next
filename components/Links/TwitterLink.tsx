@@ -1,5 +1,5 @@
-import { TWITTER_URL } from "components/constants";
-import TwitterLogo from "components/SVGs/TwitterLogo";
+import { TWITTER_URL } from "../constants";
+import TwitterLogo from "../SVGs/TwitterLogo";
 import React from "react";
 import s from "./Shared.module.css";
 export default function TwitterLink() {

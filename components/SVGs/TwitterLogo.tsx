@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function TwitterLogo({ width, height, viewBox }) {
+interface Props {
+  width: string;
+  height: string;
+  viewBox: string;
+}
+
+export default function TwitterLogo({ width, height, viewBox }: Props) {
   return (
     <>
       <svg

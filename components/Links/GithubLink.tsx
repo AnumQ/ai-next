@@ -1,5 +1,5 @@
-import { GITHUB_URL } from "components/constants";
-import GithubLogo from "components/SVGs/GithubLogo";
+import { GITHUB_URL } from "../constants";
+import GithubLogo from "../SVGs/GithubLogo";
 import React from "react";
 
 export default function GithubLink() {

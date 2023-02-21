@@ -1,5 +1,5 @@
-import { LINKEDLN_URL } from "components/constants";
-import LinkedInLogo from "components/SVGs/LinkedInLogo";
+import { LINKEDLN_URL } from "../constants";
+import LinkedInLogo from "../SVGs/LinkedInLogo";
 import React from "react";
 
 export default function LinkedInLink() {

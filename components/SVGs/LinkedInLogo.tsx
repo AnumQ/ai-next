@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function LinkedInLogo({ width, height, viewBox }) {
+interface Props {
+  width: string;
+  height: string;
+  viewBox: string;
+}
+
+export default function LinkedInLogo({ width, height, viewBox }: Props) {
   return (
     <>
       <svg

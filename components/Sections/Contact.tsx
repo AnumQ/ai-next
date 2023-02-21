@@ -12,11 +12,11 @@ import {
   CONTACT_TITLE,
   EMAIL_TITLE,
   COMPANY_TITLE,
-} from "components/constants";
-import GithubLink from "components/Links/GithubLink";
-import LinkedInLink from "components/Links/LinkedInLink";
-import TwitterLink from "components/Links/TwitterLink";
-import BackToTopSVG from "components/SVGs/BackToTopSVG";
+} from "../constants";
+import GithubLink from "../Links/GithubLink";
+import LinkedInLink from "../Links/LinkedInLink";
+import TwitterLink from "../Links/TwitterLink";
+import BackToTopSVG from "../SVGs/BackToTopSVG";
 
 export default function Contact() {
   return (

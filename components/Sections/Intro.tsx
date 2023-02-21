@@ -1,5 +1,5 @@
-import useData from "components/hooks/useData";
-import ArrowSVG from "components/SVGs/ArrowSVG";
+import useData from "../hooks/useData";
+import ArrowSVG from "../SVGs/ArrowSVG";
 import React from "react";
 import s from "./Intro.module.css";
 import { motion } from "framer-motion";
