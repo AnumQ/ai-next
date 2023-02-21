@@ -14,28 +14,6 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  function getWordsLargerThan5Char(text) {
-    const lowerCased = text.toLocaleLowerCase();
-    const words = lowerCased.split(" ");
-    words.reverse();
-
-    const trimmedWords = words.map((word) => word.trim());
-
-    const longWords = trimmedWords.filter(
-      (trimmedWord) => trimmedWord.length > 5
-    );
-
-    longWords.join(", ");
-    const result = longWords.splice(0, -2);
-    console.log(result);
-    return result;
-  }
-
-  console.log(
-    getWordsLargerThan5Char(
-      "anumwill addlonger has a tendency to writing here, but not all longwords will but you are not"
-    )
-  );
   return (
     <>
       {/* <AnimatePresence>
