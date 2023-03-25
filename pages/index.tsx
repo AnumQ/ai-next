@@ -24,7 +24,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.upper} style={{ display: "none" }}>
-          <AnimatePresence>
+          {/* <AnimatePresence>
             {true && (
               <motion.div
                 key="modal"
@@ -36,7 +36,7 @@ export default function Home() {
                 <p> hallo there</p>
               </motion.div>
             )}
-          </AnimatePresence>
+          </AnimatePresence> */}
           <motion.button
             whileHover={{
               scale: 1.2,
