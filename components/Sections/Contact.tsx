@@ -60,7 +60,6 @@ export default function Contact() {
                   display: "flex",
                 }}
               >
-                <TwitterLink />
                 <LinkedInLink />
                 <GithubLink />
               </div>
