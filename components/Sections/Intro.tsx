@@ -21,13 +21,13 @@ export default function Intro() {
     showIntroAbout: {
       opacity: 1,
       top: 0,
-      transition: { ease: "backIn", duration: 0.6, delay: 0.4 },
+      transition: { ease: "backIn", duration: 0.6, delay: 0.1 },
     },
     hideBackgroundImage: { opacity: 0, scale: 0.96 },
     showBackgroundImage: {
       opacity: 0.25,
       scale: 1,
-      transition: { ease: "easeOut", duration: 2.6, delay: 0.5 },
+      transition: { ease: [0.17, 0.62, 0.2, 0.9], duration: 0.9, delay: 0.5 },
     },
   };
 
@@ -51,10 +51,10 @@ export default function Intro() {
               {data.titleIntro1} <br />
               <span>{data.titleIntro2}</span>
             </h1>
-            <a href="#contact" className={s.s_intro__scroll_down}>
+            {/* <a href="#contact" className={s.s_intro__scroll_down}>
               <span>{constants.scrollDown}</span>
               <ArrowSVG />
-            </a>
+            </a> */}
           </motion.div>
         </div>
       </div>

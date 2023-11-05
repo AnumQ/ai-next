@@ -585,6 +585,16 @@ textarea {
   appearance: none;
 }
 
+.center {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.center_child {
+  display: flex;
+  flex-wrap: wrap;
+}
 /* ===================================================================
  * # GRID v4.0.0
  *
@@ -1677,7 +1687,7 @@ ul {
 }
 
 ul li {
-  padding-left: 0.4rem;
+  /* padding-left: 0.4rem; */
 }
 
 ul ul,
@@ -3455,7 +3465,7 @@ img.u-pull-left {
 }
 
 .s-footer__block {
-  font-size: var(--text-lg);
+  font-size: var(--text-md);
   line-height: calc(1.375 * var(--space));
   color: white;
 }

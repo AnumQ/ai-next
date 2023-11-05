@@ -1,13 +1,14 @@
 import { LINKEDLN_URL } from "../constants";
 import LinkedInLogo from "../SVGs/LinkedInLogo";
 import React from "react";
+import { LinkedInSVG } from "./SocialIcons";
 
 export default function LinkedInLink() {
   return (
     <>
       <li>
         <a href={LINKEDLN_URL}>
-          <LinkedInLogo width="32" height="32" viewBox="0 0 18 18" />
+          <LinkedInSVG />
           <span className="screen_reader_text">LinkedIn</span>
         </a>
       </li>

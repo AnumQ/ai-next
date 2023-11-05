@@ -97,21 +97,18 @@ export default function Contact() {
           </div>
         </div>{" "}
         {/* end s-footer__top */}
-        <div className="row s-footer__bottom">
-          <div className="column ss-copyright">
+        <div className="row s-footer__bottom center">
+          <div className="column ss-copyright center_child">
             <span>{COPYRIGHT}</span>
-            <span>
-              {/* Design by <a href="https://www.styleshout.com/">StyleShout</a> */}
-            </span>
           </div>
-          <div className="ss-go-top">
+          {/* <div className="ss-go-top">
             <a className="smoothscroll" title="Back to Top" href="#top">
               <span className="ss-go-top__icon">
                 <BackToTopSVG />
               </span>
               <span className="ss-go-top__text">Back to Top</span>
             </a>
-          </div>
+          </div> */}
         </div>{" "}
         {/* end s-footer__top */}
       </footer>

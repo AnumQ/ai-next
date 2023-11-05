@@ -1,13 +1,14 @@
 import { GITHUB_URL } from "../constants";
 import GithubLogo from "../SVGs/GithubLogo";
 import React from "react";
+import { GithubSVG } from "./SocialIcons";
 
 export default function GithubLink() {
   return (
     <>
       <li>
-        <a href={GITHUB_URL}>
-          <GithubLogo width="32" height="32" viewBox="0 0 18 18" />
+        <a href={GITHUB_URL} style={{ padding: "1px" }}>
+          <GithubSVG />
           <span className="screen_reader_text">Github</span>
         </a>
       </li>
