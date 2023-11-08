@@ -1,22 +1,13 @@
 import React from "react";
 import {
-  LINKEDLN_URL,
-  TWITTER_URL,
-  GITHUB_URL,
   EMAIL,
-  MOBILE,
-  COPYRIGHT,
-  COMPANY_VALUE,
-  VAT,
   CONTACT_PRE_TITLE,
   CONTACT_TITLE,
   EMAIL_TITLE,
-  COMPANY_TITLE,
 } from "../constants";
-import GithubLink from "../Links/GithubLink";
-import LinkedInLink from "../Links/LinkedInLink";
 import TwitterLink from "../Links/TwitterLink";
 import BackToTopSVG from "../SVGs/BackToTopSVG";
+import { Footer } from "./Footer";
 
 export default function Contact() {
   return (
@@ -50,68 +41,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <footer className="s-footer">
-        <div className="row s-footer__top">
-          <div className="column lg-3 md-4 stack-on-700 s-footer__block contact-social">
-            <h4 className="h6">Follow Me</h4>
-            <ul className="contact-list">
-              <div
-                style={{
-                  display: "flex",
-                }}
-              >
-                <LinkedInLink />
-                <GithubLink />
-              </div>
-              <li>
-                <a href={LINKEDLN_URL}>LinkedIn</a>
-              </li>
-              <li>
-                <a href={TWITTER_URL}>Twitter</a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/anumtravel/">Instagram</a>
-              </li>
-              <li>
-                <a href={GITHUB_URL}>Github</a>
-              </li>
-            </ul>
-          </div>
-          <div className="column lg-3 md-12 s-footer__block contact-number">
-            <h4 className="h6">Contact Me</h4>
-            <ul className="contact-list">
-              <li>
-                <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
-              </li>
-              <li>
-                <a href={`tel:${MOBILE}`}>{MOBILE}</a>
-              </li>
-            </ul>
-          </div>
-          <div className="column lg-3 md-12 s-footer__block contact-number">
-            <h4 className="h6">{COMPANY_TITLE}</h4>
-            <ul className="contact-list">
-              <li>{COMPANY_VALUE}</li>
-              <li>{VAT}</li>
-            </ul>
-          </div>
-        </div>{" "}
-        {/* end s-footer__top */}
-        <div className="row s-footer__bottom center">
-          <div className="column ss-copyright center_child">
-            <span>{COPYRIGHT}</span>
-          </div>
-          {/* <div className="ss-go-top">
-            <a className="smoothscroll" title="Back to Top" href="#top">
-              <span className="ss-go-top__icon">
-                <BackToTopSVG />
-              </span>
-              <span className="ss-go-top__text">Back to Top</span>
-            </a>
-          </div> */}
-        </div>{" "}
-        {/* end s-footer__top */}
-      </footer>
+      <Footer></Footer>
     </section>
   );
 }

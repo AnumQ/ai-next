@@ -14,6 +14,8 @@
 
   /* responsive */
   height: 7.1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 .s_header_block {
@@ -23,12 +25,13 @@
 }
 
 .s_header_logo {
+  /* background-color: blue; */
   position: absolute;
   height: inherit;
 
   /* responsive */
   width: 10rem;
-  margin-left: 3rem;
+  margin-left: 1rem;
 }
 
 .s_header_logo a {
@@ -48,13 +51,16 @@
 .s_header_social ul {
   display: flex;
   height: inherit;
+  /* background-color: grey; */
+  height: inherit;
 }
 
 .s_header_social li {
   display: flex;
+  /* height: inherit; */
   height: inherit;
-  margin-right: 0.5rem;
-  /* background-color: rgb(187, 152, 152); */
+
+  /* background-color: rgb(115, 186, 54); */
 
   /* ensures children er centered vertically and horisontally */
   align-items: center;
@@ -64,24 +70,27 @@
 .s_header_social a {
   display: flex;
   /* background-color: rgb(221, 43, 43); */
-
+  align-items: center;
+  justify-content: center;
   /* responsive */
-  width: 4rem;
-  height: 4rem;
+  /* width: 4rem; */
+  height: inherit;
 }
 
 @media (max-width: 30rem) {
   .s_header {
     height: 6rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
   .s_header_logo {
     /* z-index: 3; */
-    width: 20vw;
+    width: 22vw;
     margin-left: 3vw;
   }
 
   .s_header_social a {
-    width: 3.2rem;
-    height: 3.2rem;
+    /* width: 3.2rem; */
+    /* height: inherit; */
   }
 }

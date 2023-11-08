@@ -1,0 +1,18 @@
+.social_icons_container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.social_icon_container {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.icon_container {
+  /* background-color: red; */
+  width: 4rem;
+  height: 4rem;
+}

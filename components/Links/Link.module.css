@@ -1,0 +1,11 @@
+.icon_container {
+  /* background-color: red; */
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+* > .icon_container {
+  color: white;
+}

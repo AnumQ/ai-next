@@ -21,7 +21,7 @@
   border-bottom: 1px solid var(--color-border);
   width: 100%;
   position: fixed;
-  top: 0;
+  top: 7.4rem;
   left: 0;
   opacity: 1;
   animation: animateHeader 0.5s;
@@ -74,6 +74,7 @@
 .s_header__nav_wrap {
   justify-content: center;
   align-items: flex-start;
+  /* background-color: blue; */
 }
 
 .s_header__nav a {
