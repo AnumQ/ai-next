@@ -19,7 +19,6 @@ $header-height: 7.1rem;
 .s_header {
   display: flex;
   background-color: var(--color-body);
-  // background-color: red;
   border-bottom: 1px solid var(--color-border);
   width: 100%;
   position: fixed;
@@ -112,7 +111,6 @@ $header-height: 7.1rem;
   height: inherit;
 
   a {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,8 +122,7 @@ $header-height: 7.1rem;
     color: rgba(255, 255, 255, 0.6);
     padding: 0 2.8rem;
 
-    transition-property: color,
-      background-color;
+    transition-property: color, background-color;
 
     // Pseudo-classes for links
     &:focus,

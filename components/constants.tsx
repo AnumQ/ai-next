@@ -4,7 +4,7 @@ export const GITHUB_URL = "https://github.com/AnumQ/";
 export const INSTAGRAM_URL = "https://www.instagram.com/anumtravel/";
 export const EMAIL = "hello@anum.io";
 export const MOBILE = "+4793286096";
-export const SITE_TITLE = "Anum Codes | Software Engineer";
+export const SITE_TITLE = "Anum Codes | Senior Frontend Developer";
 export const SITE_META_DESCRIPTION =
   "frontend developer react developer swift developer mobile developer senior frontend utvikler mobil utvikler developer utvikler react nextjs typescript javascript utvikler";
 export const COPYRIGHT = "© Copyright Anum Codes 2023";
