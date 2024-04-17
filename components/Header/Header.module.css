@@ -19,7 +19,6 @@
 }
 
 .header_block {
-  background-color: red;
   height: inherit;
   display: flex;
 }

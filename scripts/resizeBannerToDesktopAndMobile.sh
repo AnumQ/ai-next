@@ -28,7 +28,7 @@ NEW_NAME_MOBILE_HIGHRES_JPG="${BASE_NAME}-mobile-highRes.jpg"
 NEW_NAME_MOBILE_HIGHRES_WEBP="${BASE_NAME}-mobile-highRes.webp"
 
 # Resize and save as low-res for mobile
-convert "$INPUT_FILE" -resize 10% -strip -quality 85 "$NEW_NAME_MOBILE_LOWRES_JPG"  
+convert "$INPUT_FILE" -resize 3% -strip -quality 85 "$NEW_NAME_MOBILE_LOWRES_JPG"  
 echo " > Created low-res MOBILE JPG: $NEW_NAME_MOBILE_LOWRES_JPG"
 
 # Convert low-res JPG to low-res WEBP
@@ -36,7 +36,7 @@ cwebp "$NEW_NAME_MOBILE_LOWRES_JPG" -o "$NEW_NAME_MOBILE_LOWRES_WEBP"
 echo " > Created low-res MOBILE WEBP: $NEW_NAME_MOBILE_LOWRES_WEBP"
 
 # Create high-res for mobile 
-convert "$INPUT_FILE" -resize 40% -strip -quality 85 "$NEW_NAME_MOBILE_HIGHRES_JPG"
+convert "$INPUT_FILE" -resize 20% -strip -quality 85 "$NEW_NAME_MOBILE_HIGHRES_JPG"
 # convert "$INPUT_FILE" -strip -interlace Plane -quality 90  "$NEW_NAME_MOBILE_HIGHRES_JPG"
 echo "Created high-res JPG: $NEW_NAME_MOBILE_HIGHRES_JPG"
 
@@ -51,7 +51,7 @@ NEW_NAME_DESKTOP_LOWRES_WEBP="${BASE_NAME}-desktop-lowRes.webp"
 NEW_NAME_DESKTOP_HIGHRES_JPG="${BASE_NAME}-desktop-highRes.jpg"
 NEW_NAME_DESKTOP_HIGHRES_WEBP="${BASE_NAME}-desktop-highRes.webp"
 # Resize and save as low-res for desktop
-convert "$INPUT_FILE" -resize 60% -strip -quality 85 "$NEW_NAME_DESKTOP_LOWRES_JPG"
+convert "$INPUT_FILE" -resize 40% -strip -quality 85 "$NEW_NAME_DESKTOP_LOWRES_JPG"
 echo "Created low-res DESKTOP JPG: $NEW_NAME_DESKTOP_LOWRES_JPG"
 # Convert low-res JPG to low-res WEBP
 cwebp "$NEW_NAME_DESKTOP_LOWRES_JPG" -o "$NEW_NAME_DESKTOP_LOWRES_WEBP"
