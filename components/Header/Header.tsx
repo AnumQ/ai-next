@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import GithubIconLink from "../Links/GithubLink";
-import LinkedInIcon from "../Links/LinkedInIcon";
+import LinkedInIconLink from "../Links/LinkedInIcon";
 import TwitterLink from "../Links/TwitterLink";
 import styles from "./Header.module.scss";
 import Link from "next/link";
@@ -11,13 +11,13 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <header className={styles.s_header}>
-      <div className={styles.s_header_block}>
-        <div className={styles.s_header_logo}>
-          <Link href="/" className="logo">
+    <header className={styles.header}>
+      <div className={styles.header_block}>
+        <div className={styles.header_logo}>
+          <Link href="/" className="logo" aria-label="Home">
             <Image
               src="/images/logo.svg"
-              alt="Logo"
+              alt="Anum Codes"
               layout="fill"
               objectFit="contain"
             />
@@ -25,13 +25,13 @@ export default function Header() {
         </div>
       </div>
       {/* intro and about */}
-      <div className={styles.s_header_block_centered}>
+      <div className={styles.header_block_centered}>
         <Navigation />
       </div>
-      <div className={styles.s_header_block}>
-        <div className={styles.s_header_social}>
-          <ul className={styles.s_header_social}>
-            <LinkedInIcon />
+      <div className={styles.header_block}>
+        <div className={styles.header_social}>
+          <ul className={styles.header_social}>
+            <LinkedInIconLink />
             <GithubIconLink />
           </ul>
         </div>
@@ -41,7 +41,7 @@ export default function Header() {
 
   function Navigation() {
     return (
-      <nav className={styles.s_header__nav}>
+      <nav className={styles.header__nav}>
         <ul>
           <li
             className={navItem === 0 ? styles.current : ""}

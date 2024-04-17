@@ -12,7 +12,7 @@ import {
   INSTAGRAM_URL,
 } from "../constants";
 import GithubIconLink from "../Links/GithubLink";
-import LinkedInIcon from "../Links/LinkedInIcon";
+import LinkedInIconLink from "../Links/LinkedInIcon";
 import styles from "./Footer.module.css";
 import { InstagramSVG } from "../Links/SocialIcons";
 import InstagramLink from "../Links/InstagramLink";
@@ -27,7 +27,7 @@ export function Footer() {
             <div className={styles.social_icons_container}>
               <div className={styles.social_icon_container}>
                 <div className={styles.icon_container}>
-                  <LinkedInIcon />
+                  <LinkedInIconLink />
                 </div>
                 <a href={LINKEDLN_URL}>Linkedln</a>
               </div>
