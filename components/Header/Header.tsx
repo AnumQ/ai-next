@@ -3,7 +3,7 @@ import React from "react";
 import GithubIconLink from "../Links/GithubLink";
 import LinkedInIconLink from "../Links/LinkedInLink";
 import TwitterLink from "../Links/TwitterLink";
-import headerScss from "./Header.module.scss";
+import styles from "./Header.module.scss";
 import Link from "next/link";
 
 export default function Header() {
@@ -11,9 +11,9 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <header className={headerScss.s_header}>
-      <div className={headerScss.s_header_block}>
-        <div className={headerScss.s_header_logo}>
+    <header className={styles.s_header}>
+      <div className={styles.s_header_block}>
+        <div className={styles.s_header_logo}>
           <Link href="/" className="logo">
             <Image
               src="/images/logo.svg"
@@ -25,12 +25,10 @@ export default function Header() {
         </div>
       </div>
       {/* intro and about */}
-      <div className={headerScss.s_header_block_centered}>
-        {renderNavItems()}
-      </div>
-      <div className={headerScss.s_header_block}>
-        <div className={headerScss.s_header_social}>
-          <ul className={headerScss.s_header_social}>
+      <div className={styles.s_header_block_centered}>{renderNavItems()}</div>
+      <div className={styles.s_header_block}>
+        <div className={styles.s_header_social}>
+          <ul className={styles.s_header_social}>
             <LinkedInIconLink />
             <GithubIconLink />
           </ul>
@@ -41,10 +39,10 @@ export default function Header() {
 
   function renderNavItems() {
     return (
-      <nav className={headerScss.s_header__nav}>
+      <nav className={styles.s_header__nav}>
         <ul>
           <li
-            className={navItem === 0 ? headerScss.current : ""}
+            className={navItem === 0 ? styles.current : ""}
             onClick={() => setNavItem(0)}
           >
             <a href="#intro" className="smoothscroll">
@@ -52,7 +50,7 @@ export default function Header() {
             </a>
           </li>
           <li
-            className={navItem === 1 ? headerScss.current : ""}
+            className={navItem === 1 ? styles.current : ""}
             onClick={() => setNavItem(1)}
           >
             <a href="#contact" className="smoothscroll">
