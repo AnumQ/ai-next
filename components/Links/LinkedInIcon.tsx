@@ -3,7 +3,7 @@ import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import SocialIconLink from "./SocialIconLink";
 
-export default function LinkedInIconLink() {
+export default function LinkedInIcon() {
   return (
     <>
       <SocialIconLink

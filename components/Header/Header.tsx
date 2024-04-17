@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import GithubIconLink from "../Links/GithubLink";
-import LinkedInIconLink from "../Links/LinkedInLink";
+import LinkedInIcon from "../Links/LinkedInIcon";
 import TwitterLink from "../Links/TwitterLink";
 import styles from "./Header.module.scss";
 import Link from "next/link";
@@ -25,11 +25,13 @@ export default function Header() {
         </div>
       </div>
       {/* intro and about */}
-      <div className={styles.s_header_block_centered}>{renderNavItems()}</div>
+      <div className={styles.s_header_block_centered}>
+        <Navigation />
+      </div>
       <div className={styles.s_header_block}>
         <div className={styles.s_header_social}>
           <ul className={styles.s_header_social}>
-            <LinkedInIconLink />
+            <LinkedInIcon />
             <GithubIconLink />
           </ul>
         </div>
@@ -37,7 +39,7 @@ export default function Header() {
     </header>
   );
 
-  function renderNavItems() {
+  function Navigation() {
     return (
       <nav className={styles.s_header__nav}>
         <ul>
