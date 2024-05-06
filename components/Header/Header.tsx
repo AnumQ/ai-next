@@ -24,7 +24,6 @@ export default function Header() {
           </Link>
         </div>
       </div>
-      {/* intro and about */}
       <div className={styles.header_block_centered}>
         <Navigation />
       </div>
