@@ -74,11 +74,10 @@ export default function Intro() {
           className={`${s.column} ${s.s_intro__about}`}
         >
           <h2 className={s.s_intro__about_title}>{data.titleAbout}</h2>
-          <p className={s.intro__about_description}>
-            {data.titleDescription1}
-            <b>{data.titleDescription2}</b>
-          </p>
-          <p>{data.titleDescription3}</p>
+          <p className={s.intro__about_description}>{data.titleDescription1}</p>
+          <p>🎗️ Female developer of the Year 2022 and Role Model Finalist🎗️ </p>
+          <p>{data.titleDescription2}</p>
+          {/* <p>{data.titleDescription3}</p> */}
         </motion.div>
       </div>
     </section>

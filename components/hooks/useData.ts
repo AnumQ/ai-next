@@ -5,15 +5,12 @@ const useData = () => {
     titleAbout: "Hello, I am Anum Qudsia",
     titleDescription1:
       "Frontend and Fullstack developer with 11 \
-            years of experience in complex problem solving and building applications. Skills: ",
+            years of experience in complex problem solving and building application systems. ",
     titleDescription2:
-      "ReactJS, NextJS, Remix, Swift, Firebase, Kotlin, Android, Java, \
+      "Skills: ReactJS, NextJS, Remix, Swift, Firebase, Kotlin, Android, Java, \
               Javascript/Typescript, Node, Azure, HTML, CSS",
     titleDescription3:
-      "I have integrated several third-party libraries i.e. payment \
-            providers such as Stripe, Adyen, Vipps, Google Pay and Apple Pay and written native modules in React Native \
-            to create bridge between Android SDK (written in Java) and \
-            Javascript.",
+      "Proven record of solving highly complex problems and ensuring client satisfaction",
   };
 
   const constants = {
