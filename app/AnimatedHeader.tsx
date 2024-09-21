@@ -2,7 +2,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export function AnimatedHeader() {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,9 +24,11 @@ export function AnimatedHeader() {
             <Image
               src="/images/logo.svg"
               alt="Anum Codes"
-              layout="fill"
-              objectFit="contain"
-            />
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: "contain"
+              }} />
           </Link>
         </div>
         <nav>

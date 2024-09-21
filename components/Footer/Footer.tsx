@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./../../styles/Home.module.css";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -12,7 +12,15 @@ export default function Footer() {
       >
         Powered by
         <span className={styles.logo}>
-          <Image src="/anumio.svg" alt="anum Logo" width={72} height={16} />
+          <Image
+            src="/anumio.svg"
+            alt="anum Logo"
+            width={72}
+            height={16}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </span>
       </a>
     </footer>

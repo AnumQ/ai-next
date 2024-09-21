@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import React from "react";
 import GithubIconLink from "../Links/GithubLink";
 import LinkedInIconLink from "../Links/LinkedInIcon";
@@ -19,9 +19,11 @@ export default function Header() {
             <Image
               src="/images/logo.svg"
               alt="Anum Codes"
-              layout="fill"
-              objectFit="contain"
-            />
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: "contain"
+              }} />
           </Link>
         </div>
       </div>
