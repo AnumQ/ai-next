@@ -98,7 +98,7 @@
 }
 
 .s_intro__text {
-  font-family: var(--font-2);
+  font-family: var(--font-3);
   font-weight: 500;
   font-size: var(--text-huge);
   line-height: var(--text-huge-line-height);
@@ -165,7 +165,6 @@
   /* width: 100%; */
   max-width: 880px;
   background-color: rgba(10, 11, 11, 0.75);
-  font-weight: 300;
   font-size: calc(var(--text-size) * 1.1111);
   line-height: var(--vspace-1_25);
   color: var(--color-text-light);
@@ -188,14 +187,21 @@
 }
 
 .s_intro__about .s_intro__about_title {
+  color: white;
   text-align: center;
-  font-size: var(--text-lg);
+  font-size: 2rem;
   line-height: var(--vspace-1);
   margin-top: 0;
   margin-bottom: var(--vspace-2);
   /* padding: 6rem; */
 }
 
+.intro__about_description {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: var(--font-3);
+}
 /* --------------------------------------------------------------------
  * ## intro stats
  * -------------------------------------------------------------------- */

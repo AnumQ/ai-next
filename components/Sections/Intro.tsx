@@ -52,6 +52,7 @@ export default function Intro() {
           />
         </motion.div>
         <div className={s.column}>
+          <title></title>
           <motion.div
             className={s.s_intro__top_block}
             variants={animations}
@@ -73,7 +74,7 @@ export default function Intro() {
           className={`${s.column} ${s.s_intro__about}`}
         >
           <h2 className={s.s_intro__about_title}>{data.titleAbout}</h2>
-          <p>
+          <p className={s.intro__about_description}>
             {data.titleDescription1}
             <b>{data.titleDescription2}</b>
           </p>

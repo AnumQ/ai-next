@@ -4,14 +4,14 @@ const useData = () => {
     titleIntro2: " Developer.",
     titleAbout: "Hello, I am Anum Qudsia",
     titleDescription1:
-      " I am an independent mobile, frontend/fullstack developer with 8 \
-            years of experience in iOS, Android and Web development. Skills: ",
+      "An independent mobile, frontend/fullstack developer with 11 \
+            years of experience in complex problem solving. Skills: ",
     titleDescription2:
-      "Swift, ReactJS, NextJS, Firebase, Kotlin, Android, Java, \
+      "ReactJS, NextJS, Remix, Swift, Firebase, Kotlin, Android, Java, \
               Javascript/Typescript, Node, Azure, HTML, CSS",
     titleDescription3:
-      "I have also integrated several third-party libraries i.e. payment \
-            providers such as Stripe and written native modules in React Native \
+      "I have integrated several third-party libraries i.e. payment \
+            providers such as Stripe, Adyen, Vipps, Google Pay and Apple Pay and written native modules in React Native \
             to create bridge between Android SDK (written in Java) and \
             Javascript.",
   };

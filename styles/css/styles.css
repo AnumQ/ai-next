@@ -80,6 +80,8 @@
 :root {
   --font-1: "Inter", sans-serif;
   --font-2: "Manrope", sans-serif;
+  --font-3: "Montserrat", sans-serif;
+  --font-4: "Raleway", sans-serif;
 
   /* monospace
     */
@@ -1294,7 +1296,7 @@ textarea {
  * ## base type styles
  * -------------------------------------------------------------------- */
 body {
-  font-family: var(--font-1);
+  font-family: var(--font-4);
   font-size: var(--base-font-size);
   font-weight: 400;
   line-height: var(--vspace-1);
@@ -1333,7 +1335,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: var(--font-2);
+  font-family: var(--font-3);
   font-weight: 600;
   color: var(--color-text-dark);
   font-variant-ligatures: common-ligatures;
@@ -2780,12 +2782,12 @@ img.u-pull-left {
 }
 
 .text-display-title {
-  font-family: var(--font-2);
+  font-family: var(--font-);
   font-size: calc(var(--base-font-size) * var(--text-multiplier) * 2);
   /* font-size: calc(var(--text-xxl * --text-multiplier)) px; */
-  letter-spacing: 3px;
-  font-weight: 600;
-  line-height: 1.2857;
+  letter-spacing: 1px;
+  /* font-weight: 400; */
+  line-height: 2.8rem;
   margin-top: 0;
 }
 
