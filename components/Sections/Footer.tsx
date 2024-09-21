@@ -18,6 +18,7 @@ import { InstagramSVG } from "../Links/SocialIcons";
 import InstagramLink from "../Links/InstagramLink";
 
 export function Footer() {
+  const year = new Date().getFullYear();
   return (
     <footer className="s-footer">
       <div className="row s-footer__top">
@@ -75,7 +76,9 @@ export function Footer() {
       {/* end s-footer__top */}
       <div className="row s-footer__bottom center">
         <div className="column ss-copyright center_child">
-          <span>{COPYRIGHT}</span>
+          <span>
+            {COPYRIGHT} {year}
+          </span>
         </div>
         {/* <div className="ss-go-top">
            <a className="smoothscroll" title="Back to Top" href="#top">
