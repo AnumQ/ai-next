@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { useImages } from "../context/ImageContext";
 import { ResponsiveImage } from "./ImageView";
 import { bannerData } from "../../pages";
+import Link from "next/link";
 
 const animations = {
   hidden: { opacity: 0, top: 40 },
@@ -75,7 +76,17 @@ export default function Intro() {
         >
           <h2 className={s.s_intro__about_title}>{data.titleAbout}</h2>
           <p className={s.intro__about_description}>{data.titleDescription1}</p>
-          <p>🎗️ Female developer of the Year 2022 and Role Model Finalist🎗️ </p>
+          <p>
+            <Link
+              rel="noopener noreferrer"
+              href={
+                "https://www.finn.no/jobbeifinn/teknologi/female-developer-of-the-year-2022-2"
+              }
+              target="_blank"
+            >
+              🎗️ Female developer of the Year 2022 and Role Model Finalist 🎗️
+            </Link>
+          </p>
           <p>{data.titleDescription2}</p>
           {/* <p>{data.titleDescription3}</p> */}
         </motion.div>
