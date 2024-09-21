@@ -5,9 +5,5 @@ interface HomeProps {}
 export const metadata: Metadata = {};
 
 export default function Home({}: HomeProps) {
-  return (
-    <>
-      <h1>Hey</h1>
-    </>
-  );
+  return <>{/* <h1>Hey</h1> */}</>;
 }

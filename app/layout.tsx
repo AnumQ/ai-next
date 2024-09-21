@@ -3,6 +3,7 @@
 import React from "react";
 import { SITE_META_DESCRIPTION, SITE_TITLE } from "../components/constants";
 import "./globals.css";
+import { AnimatedHeader } from "./AnimatedHeader";
 import Header from "../components/Header/Header";
 
 export const metadata = {
@@ -23,10 +24,12 @@ export default function RootLayout({
             <h1 className="text-2xl font-bold">My Next.js App</h1>
           </div>
         </header> */}
-        <Header />
+        {/* <Header /> */}
+
+        <AnimatedHeader />
         <main className="container mx-auto p-4">{children}</main>
         <footer className="bg-gray-900 p-4 text-white text-center">
-          <p>&copy; 2024 My Next.js App. All rights reserved.</p>
+          {/* <p>&copy; 2024 My Next.js App. All rights reserved.</p> */}
         </footer>
       </body>
     </html>

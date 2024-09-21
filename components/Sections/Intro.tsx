@@ -5,7 +5,7 @@ import s from "./Intro.module.css";
 import { motion } from "framer-motion";
 import { useImages } from "../context/ImageContext";
 import { ResponsiveImage } from "./ImageView";
-import { bannerData } from "../../pages";
+import { bannerData } from "../../pages.old";
 
 const animations = {
   hidden: { opacity: 0, top: 40 },
