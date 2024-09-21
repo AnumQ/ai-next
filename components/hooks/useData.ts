@@ -4,7 +4,7 @@ const useData = () => {
     titleIntro2: " Developer.",
     titleAbout: "Hello, I am Anum Qudsia",
     titleDescription1:
-      "An frontend/fullstack developer with 11 \
+      "Frontend and Fullstack developer with 11 \
             years of experience in complex problem solving and building applications. Skills: ",
     titleDescription2:
       "ReactJS, NextJS, Remix, Swift, Firebase, Kotlin, Android, Java, \
