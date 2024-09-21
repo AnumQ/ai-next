@@ -2,7 +2,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export function AnimatedHeader() {
   const [isVisible, setIsVisible] = useState(false);
