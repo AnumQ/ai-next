@@ -3,6 +3,9 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import SocialIconLink from "./links/SocialIconLink";
+import { GITHUB_URL, LINKEDLN_URL } from "../components/constants";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function NavLink({
   children,
@@ -66,7 +69,7 @@ export function AnimatedHeader() {
           </div>
         </div>
         {/* Nav links in center */}
-        <nav className=" h-full">
+        <nav className="h-full">
           <ul className="flex h-full border-l border-r border-solid border-white/10">
             <NavLink
               selected={currentSection === 1}
@@ -84,7 +87,20 @@ export function AnimatedHeader() {
             </NavLink>
           </ul>
         </nav>
-        <div className="w-20 h-10 bg-blue-100"></div>
+        <div className="w-30 h-full">
+          <ul className="flex items-center justify-center h-full px-4">
+            <SocialIconLink
+              href={LINKEDLN_URL}
+              icon={<FaLinkedin size="2.4em" />}
+              alt={"LinkedIn"}
+            />
+            <SocialIconLink
+              href={GITHUB_URL}
+              icon={<FaGithub size="2.2em" />}
+              alt={"Github"}
+            />
+          </ul>
+        </div>
       </div>
     </header>
   );
