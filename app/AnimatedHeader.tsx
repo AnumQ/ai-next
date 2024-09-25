@@ -91,12 +91,12 @@ export function AnimatedHeader() {
           <ul className="flex items-center justify-center h-full px-4">
             <SocialIconLink
               href={LINKEDLN_URL}
-              icon={<FaLinkedin size="2.4em" />}
+              icon={<FaLinkedin size="2em" />}
               alt={"LinkedIn"}
             />
             <SocialIconLink
               href={GITHUB_URL}
-              icon={<FaGithub size="2.2em" />}
+              icon={<FaGithub size="1.9em" />}
               alt={"Github"}
             />
           </ul>
