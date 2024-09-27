@@ -13,5 +13,5 @@ export const COMPANY_VALUE = "FIRETECH AS";
 export const VAT = "VAT: 917 876 770";
 export const CONTACT_PRE_TITLE = "Get In Touch";
 export const CONTACT_TITLE =
-  "Do you need help in automating processes using technology? Let’s work together.";
+  "Are you in need of a developer? Let’s work together.";
 export const EMAIL_TITLE = "Write to me";
