@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import React from "react";
-import Header from "../components/Header/Header";
+// import Header from "../components/Header/Header";
 import Intro from "../components/Sections/Intro";
 import Contact from "../components/Sections/Contact";
 import { useScroll } from "framer-motion";
@@ -23,7 +23,7 @@ export function Site() {
       </Head>
 
       <main className={styles.main}>
-        <Header />
+        {/* <Header /> */}
         <Intro />
         <Contact />
       </main>

@@ -1,3 +1,4 @@
+"use client";
 import React, { createContext, useContext, ReactNode } from "react";
 import { useImageLoader } from "../hooks/useImageLoader";
 import { isTablet, isMobile } from "../utils/utils";
