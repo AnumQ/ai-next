@@ -21,15 +21,15 @@ function NavLink({
   return (
     <li
       className={`${
-        selected ? "bg-selectedGray" : ""
-      } h-full items-center flex transition-colors duration-300 ease-in-out `}
+        selected
+          ? "bg-neutral-800 hover:bg-neutral-800 text-emerald-600/90 text-primaryTeal hover:text-emarald-900"
+          : "hover:bg-neutral-400/20 text-zinc-500 hover:text-emerald-600"
+      } cursor-pointer h-full items-center flex transition-colors duration-200 ease-in-out`}
       onClick={onClick}
     >
       <a
         href={link}
-        className={`text-[0.9rem] text-primaryTeal font-normal uppercase tracking-[.4em] text-white/60 px-11 hover:${
-          selected ? "" : "text-white"
-        } transition-colors duration-200 ease-in-out`}
+        className={`text-[0.9rem] font-normal uppercase tracking-[.4em] px-11 transition-colors duration-50 ease-in-out`}
       >
         {children}
       </a>
