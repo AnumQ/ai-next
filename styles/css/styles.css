@@ -596,6 +596,7 @@ textarea {
 .center_child {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 /* ===================================================================
  * # GRID v4.0.0
@@ -3616,6 +3617,7 @@ img.u-pull-left {
 
   .ss-copyright span {
     display: block;
+    text-align: center;
   }
 
   .ss-copyright span::after {
