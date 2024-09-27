@@ -48,7 +48,7 @@ export default function Intro() {
           variants={animations}
           initial={animations.hideBackgroundImage}
           animate={animations.showBackgroundImage}
-          className={`bg-no-repeat bg-cover w-full absolute top-4 right-0 bottom-0 left-0 opacity-30`}
+          className={`bg-cover absolute top-2 right-0 bottom-0 left-0`}
         >
           <ResponsiveImage
             image={bannerData}
