@@ -69,7 +69,7 @@ export function AnimatedHeader() {
           </div>
         </div>
         {/* Nav links in center */}
-        <nav className="h-full">
+        <nav className="h-full hidden sm:flex">
           <ul className="flex h-full border-l border-r border-solid border-white/10">
             <NavLink
               selected={currentSection === 1}
@@ -88,15 +88,15 @@ export function AnimatedHeader() {
           </ul>
         </nav>
         <div className="w-30 h-full">
-          <ul className="flex items-center justify-center h-full px-4">
+          <ul className="flex items-center justify-center h-full pr-2 sm:pr-4">
             <SocialIconLink
               href={LINKEDLN_URL}
-              icon={<FaLinkedin size="2em" />}
+              icon={<FaLinkedin size="2.3em" />}
               alt={"LinkedIn"}
             />
             <SocialIconLink
               href={GITHUB_URL}
-              icon={<FaGithub size="1.9em" />}
+              icon={<FaGithub size="2.26em" />}
               alt={"Github"}
             />
           </ul>
