@@ -7,7 +7,7 @@ export const MOBILE = "+4793286096";
 export const SITE_TITLE = "Anum Codes | Senior Frontend Developer";
 export const SITE_META_DESCRIPTION =
   "frontend developer react developer swift developer mobile developer senior frontend utvikler mobil utvikler developer utvikler react nextjs typescript javascript utvikler";
-export const COPYRIGHT = "© Copyright Anum Codes 2023";
+export const COPYRIGHT = "© Copyright Anum Codes";
 export const COMPANY_TITLE = "COMPANY";
 export const COMPANY_VALUE = "FIRETECH AS";
 export const VAT = "VAT: 917 876 770";
